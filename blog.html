@@ -4,18 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 <!-- Slider Start -->
-<section id="global-header">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Get the latest on what we're doing</h1>
-          <p>Catch up with us, anytime and anywhere</p>
-        </div>
-      </div>
+    <div class="container" style="text-align:center; margin-bottom:50px;">
+      <h2 style="color:#000; font-weight:400; font-size: 40px; margin-top:100px;">Blog</h2>
+      <p style="margin-top:10px; font-size:22px;">Keep up with the latest news.</p>
     </div>
   </div>
-</section>
 {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>

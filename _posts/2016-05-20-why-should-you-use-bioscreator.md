@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "The history of marketing"
-author: "Bart Simpson"
-meta: "Springfield"
+title: Why should you use BiosCreator
+subtitle: Jekyll is a blog-aware, static site generator in Ruby https://jekyllrb.com
+date: 2016-05-20 21:11:27
+author: jekyll
 ---
+The beginnings of digital marketing technology can be traced back to the 1980’s, when computers became sophisticated enough to store huge volumes of customer information. For a brief moment, no one knew what would happen in digital marketing, but by the 90’s it all became clear
 
-The beginnings of digital marketing technology can be traced back to the 1980's, when computers became sophisticated enough to store huge volumes of customer information. For a brief moment, no one knew what would happen in digital marketing, but by the 90's it all became clear.
 
 ![Man](https://source.unsplash.com/random/1500x1146)
 
@@ -30,3 +31,7 @@ Practitioners of the history of marketing thought note that both practitioners a
 The following sections discuss both approaches to the history of marketing, closing with a debate about the standard chronology of marketing, a widely known hypothesis about the history of marketing, but one that historians in the marketing field have challenged.
 
 [source](https://en.wikipedia.org/wiki/History_of_marketing): Wikipedia
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
