@@ -1,25 +1,24 @@
 ---
 layout: page
-title: Contact us!
+title: Contact
 permalink: /contact/
+heading: Get in touch today
+description: We'd love to help you improve your repair success rate.
+
+map:
+  latitude: 120.96648
+  longitude: 15.48586
+  address: "Cabanatuan City, Nueva Ecija, Philippines"
+  zoom: 13
 ---
 
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Drop Us A Note</h1>
-          <p>Don’t just take our word for it. Check out some of our latest work.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- contact form start -->
 <section id="contact-form">
   <div class="container">
+    <div class="container" style="text-align:center; margin-bottom:50px;">
+      <h2 style="color:#000; font-weight:400; font-size: 40px; margin: 0 0 30px;">Get in touch today</h2>
+      <p style="margin-top:10px; font-size:22px;">We'd love to help you increase your repair success rate.</p>
+    </div>
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
@@ -53,13 +52,13 @@ permalink: /contact/
           <h2>Stop By For A visit</h2>
           <ul class="address-block">
             <li>
-              <i class="fa fa-map-marker"></i>North Main Street,Brooklyn Australia
+              <i class="fa fa-map-marker"></i><address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
             </li>
             <li>
-              <i class="fa fa-envelope-o"></i>Email: contact@mail.com
+              <a href="mailto:support@example.com"><i class="fa fa-envelope-o"></i>Email: support@bioscreator.com</a>
             </li>
             <li>
-              <i class="fa fa-phone"></i>Phone:+88 01672 506 744
+              <i class="fa fa-phone"></i>Phone:
             </li>
           </ul>
 
@@ -100,19 +99,39 @@ permalink: /contact/
       </div>
     </div>
   </div>
-</section>
-<!-- Call to action Start -->
-<section id="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve
-            achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#">Tell Us Your Story</a>
-        </div>
-      </div>
-    </div>
+
+  <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
+  <form action="/contact-success" method="post" class="contact-form">
+  <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
+  <div class="row form-group">
+  <div class="col-md-6 mb-3 mb-md-0">
+  <label class="text-black" for="fname" style="margin:20px 0 5px;">First Name</label>
+  <input type="text" id="fname" class="form-control">
   </div>
-</section>
+  <div class="col-md-6">
+  <label class="text-black" for="lname" style="margin:20px 0 5px;">Last Name</label>
+  <input type="text" id="lname" class="form-control">
+  </div>
+  </div>
+  <div class="row form-group">
+  <div class="col-md-12">
+  <label class="text-black" for="email" style="margin:20px 0 5px;">Email</label>
+  <input type="email" id="email" class="form-control">
+  </div>
+  </div>
+  <div class="row form-group">
+
+  <div class="col-md-12">
+  <label class="text-black" for="subject" style="margin:20px 0 5px;">Subject</label>
+  <input type="mobile" id="mobile" class="form-control">
+  </div>
+  </div>
+  <div class="row form-group">
+  <div class="col-md-12" style="text-align:center;">
+  <input type="submit" value="Download BiosCreator" class="btn-2" href="{{ site.baseurl }}/contact-success">
+  </div>
+  </div>
+  </form>
+  </div>
+
+  </section>

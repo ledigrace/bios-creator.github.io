@@ -3,7 +3,7 @@
  * In airspace, it is called style.css
  * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
  * The original style.css is now called airspace.css
- * 
+ *
  */
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
@@ -65,7 +65,7 @@ a:active {
 	Header Start
 --*/
 header {
-  background: #fff;
+  background: #8c0808;
   padding: 20px 0;
 }
 header .navbar {
@@ -83,7 +83,7 @@ header .navbar-default .navbar-nav {
   padding-top: 10px;
 }
 header .navbar-default .navbar-nav li a {
-  color: #333333;
+  color: rgba(255,255,255,.8);
   padding: 10px 26px;
   font-size: 15px;
 }
@@ -97,11 +97,11 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/dashboard.webp") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  background-position: 10% 20%;
+  padding: 200px 50px 280px 50px;
   position: relative;
 }
 #slider:before {
@@ -774,7 +774,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	footer Start
 --*/
 footer {
-  background: #F5F5F5;
+  background: #410b13;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
@@ -785,7 +785,7 @@ footer p {
   color: #919191;
 }
 footer a {
-  color: #595959;
+  color: #000;
 }
 footer .footer-manu {
   padding-bottom: 25px;
@@ -800,8 +800,8 @@ footer .footer-manu ul li {
 }
 footer .footer-manu ul li a {
   display: inline-block;
-  color: #494949;
+  color: #999;
 }
 footer .footer-manu ul li a:hover {
-  color: #000;
+  color: #fff;
 }
