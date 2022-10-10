@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The history of marketing"
+title: The history of marketing
 author: "Bart Simpson"
 meta: "Springfield"
 ---

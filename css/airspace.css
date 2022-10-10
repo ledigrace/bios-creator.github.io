@@ -34,7 +34,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 28px;
 }
 ul {
@@ -53,13 +53,13 @@ a:active {
 }
 .section-title h2 {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
-  font-style: italic;
+  font-family: 'Roboto', serif;
   color: #666;
+  font-size: 20px;
 }
 /*--
 	Header Start
@@ -83,12 +83,16 @@ header .navbar-default .navbar-nav {
   padding-top: 10px;
 }
 header .navbar-default .navbar-nav li a {
-  color: rgba(255,255,255,.8);
-  padding: 10px 26px;
+  color: rgb(183, 183, 183);
+  border-bottom: 1px solid rgb(183 183 183 / 0%);
+  padding: 10px 19px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav li a:hover {
-  color: #000;
+header .navbar-default .navbar-nav li a:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(183, 183, 183);
+  padding: 10px 19px;
+  transition: .2s ease-in-out;
 }
 /*---------------------------------------------
 					Index Start
@@ -121,8 +125,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 45px;
+  font-weight: 300;
+  font-size: 60px;
   line-height: 60px;
   letter-spacing: 10px;
   padding-bottom: 45px;
@@ -131,7 +135,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 23px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 3px;
 }
 /*--
@@ -150,7 +154,6 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 20px;
 }
 #intro .block img {
-  padding-left: 40px;
   width: 100%;
 }
 #intro .section-title {
@@ -189,7 +192,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	call-to-action Start
 --*/
 #call-to-action {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background-color: #113768;
   background-size: cover;
   background-attachment: fixed;
   padding: 70px 0px;
@@ -231,7 +234,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/dashboard.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
@@ -253,7 +256,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 100px 0;
 }
 #feature h2 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -792,7 +795,7 @@ footer .footer-manu {
 }
 footer .footer-manu ul {
   margin: 0px;
-  padding: 0px;
+  padding: 20px;
 }
 footer .footer-manu ul li {
   display: inline-block;
