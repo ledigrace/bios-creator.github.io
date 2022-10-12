@@ -36,7 +36,7 @@
 .button a {
   color: #fff;
   width: 22%;
-  background-color: rgb(76 92 150 / 85%);
+  background-color: #113768;
   padding: 16px 50px;
   text-decoration: none;
   border: 1px solid #113768;
@@ -45,7 +45,7 @@
 .button a:hover {
   color: #ffff;
   width: 22%;
-  background-color: #113768;
+  background-color: rgb(76 92 150 / 85%);
   padding: 16px 50px;
   text-decoration: none;
   border: 1px solid #113768;
