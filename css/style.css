@@ -118,3 +118,31 @@
   width: 40%;
   color: #113768;
 }
+.tos{
+   font-size:22px;
+   margin-bottom:20px;
+   color:#666;
+}
+.tos-h2{
+  text-align:center;
+  font-weight:400;
+  font-size:40px;
+  margin: 0 0 30px;"
+}
+.privacy{
+   font-size:22px;
+   margin-bottom:20px;
+   color:#666;
+}
+.privacy-h2{
+  text-align:center;
+  font-weight:400;
+  font-size:40px;
+  margin: 0 0 30px;"
+}
+#how-do-i-withdraw-my-consent, #payment, #links{
+  font-weight:bold;
+  font-size:22px;
+  margin-bottom: 20px;
+  color: #000;
+}
