@@ -169,7 +169,7 @@ px      68    160    252    */
     font-size: 18px;
   }
   p {
-    font-size: 13px;
+    font-size: 20px;
   }
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
@@ -405,7 +405,7 @@ px      68    160    252    344    436    */
   #intro .block img {
     height: auto;
     width: auto;
-    max-width: 440px;
+    max-width: 400px;
     max-height: 400px;
   }
   .row-2{
@@ -500,6 +500,19 @@ px      68    160    252    344    436    */
     font-size: 16px;
     padding: 20px 40px;
   }
+  .gstarted{
+    padding: 20px;
+  }
+  .question{
+   padding: 0 40px;
+  }
+  #contact-box{
+    padding: 35px 0 50px 0;
+    margin: 0 20px;
+  }
+  .pblog{
+    margin: 20px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px){
@@ -508,6 +521,7 @@ px      68    160    252    344    436    */
   }
   #intro .block h2 {
     text-align: center;
+    font-size: 30px;
   }
   #intro .section-title p{
     padding: 50px;
@@ -540,5 +554,60 @@ px      68    160    252    344    436    */
   #feature{
     background-position: 23%;
   }
+  .gstarted{
+    padding: 20px;
+  }
+  .question{
+   padding: 0 40px;
+  }
+  #contact-box{
+    padding: 35px 0 50px 0;
+    margin: 0 20px;
+  }
+  .pblog{
+    margin: 30px;
+  }
+  .tos{
+    padding: 30px 50px;
+     font-size:20px;
+     margin-bottom:20px;
+     color:#666;
+  }
+  .tos-h2{
+    text-align:center;
+    font-weight:400;
+    font-size:40px;
+    margin: 30px;
+  }
+  .privacy{
+    padding: 30px 50px;
+    font-size:20px;
+    margin-bottom:10px;
+    color:#666;
+  }
+  .privacy-h2{
+    text-align:center;
+    font-weight:400;
+    font-size:40px;
+    margin: 30px;
+  }
+  #how-do-i-withdraw-my-consent,
+  #payment,
+  #links{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 50px;
+  }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .col-md-offset-2{
+    margin-left: 10%;
+  }
+  .col-md-7{
+    width: 50%
+  }
+  .backed{
+    margin-left: 90px;
+  }
 }
