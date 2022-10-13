@@ -611,3 +611,15 @@ px      68    160    252    344    436    */
     margin-left: 90px;
   }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+  .row {
+    padding: 35px;
+  }
+  .backed{
+    margin-left: 80px;
+  }
+  #feature{
+    background-position: 40%;
+  }
+}
