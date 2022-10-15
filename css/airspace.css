@@ -690,6 +690,13 @@ header .navbar-default .navbar-nav li a:hover {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+
+.tel-verify{
+  display: flex;
+}
+#btn-verify{
+  margin-left: 10px;
+}
 /*--
 	wrapper-contact Start
 --*/

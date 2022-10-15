@@ -19,7 +19,71 @@ map:
       <h2 style="color:#000; font-weight:400; font-size: 40px; margin: 0 0 30px;">Get in touch today</h2>
       <p style="margin-top:10px; font-size:22px;">We'd love to help you increase your repair success rate.</p>
     </div>
-    <div class="row">
+
+    <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
+    <form action="/contact-success" method="post" class="contact-form">
+    <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
+    <div class="row form-group">
+    <div class="col-md-6 mb-3 mb-md-0">
+    <div class="f-name">
+    <label class="text-black" for="fname" style="margin:20px 0 5px;">First Name</label>
+    </div>
+    <input type="text" id="fname" class="form-control">
+    </div>
+    <div class="col-md-6">
+    <div class="f-name">
+    <label class="text-black" for="lname" style="margin:20px 0 5px;">Last Name</label>
+    </div>
+    <input type="text" id="lname" class="form-control">
+    </div>
+    </div>
+    <div class="row form-group">
+    <div class="col-md-12">
+    <div class="f-name">
+    <label class="text-black" for="address" style="margin:20px 0 5px;">Address</label>
+    </div>
+    <input type="address" id="address" class="form-control">
+    </div>
+    </div>
+    <div class="row form-group">
+    <div class="col-md-12">
+    <div class="f-name">
+    <label class="text-black" for="email" style="margin:20px 0 5px;">Email</label>
+    </div>
+    <input type="email" id="email" class="form-control">
+    </div>
+    </div>
+
+    <div class="row form-group">
+    <div class="col-md-7">
+     <div class="f-name">
+     <label class="text-black" for="subject" style="margin:20px 0 5px;">Enter your phone number</label>
+     </div>
+     <div class="tel-verify">
+      <input id="phone" type="tel" name="phone" class="form-control" />
+      <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/>
+      </div>
+      </div>
+      </div>
+
+      <div class="row form-group">
+      <div class="col-md-12">
+      <div class="f-name">
+      <label class="text-black" for="message" style="margin:20px 0 5px;">Message</label>
+      </div>
+      <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+      </div>
+
+      <div class="row form-group">
+      <div class="btn-3">
+        <a href="{{ site.baseurl }}/contact-success">Download BiosCreator</a>
+      </div>
+      </div>
+    </form>
+    </div>
+
+    <!-- <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <form>
@@ -45,7 +109,7 @@ map:
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
@@ -73,46 +137,12 @@ map:
     </div>
   </div>
 
-  <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
-  <form action="/contact-success" method="post" class="contact-form">
-  <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
-  <div class="row form-group">
-  <div class="col-md-6 mb-3 mb-md-0">
-  <div class="f-name">
-  <label class="text-black" for="fname" style="margin:20px 0 5px;">First Name</label>
-  </div>
-  <input type="text" id="fname" class="form-control">
-  </div>
-  <div class="col-md-6">
-  <div class="f-name">
-  <label class="text-black" for="lname" style="margin:20px 0 5px;">Last Name</label>
-  </div>
-  <input type="text" id="lname" class="form-control">
-  </div>
-  </div>
-  <div class="row form-group">
-  <div class="col-md-12">
-  <div class="f-name">
-  <label class="text-black" for="email" style="margin:20px 0 5px;">Email</label>
-  </div>
-  <input type="email" id="email" class="form-control">
-  </div>
-  </div>
-  <div class="row form-group">
-
-  <div class="col-md-12">
-  <div class="f-name">
-  <label class="text-black" for="subject" style="margin:20px 0 5px;">Subject</label>
-  </div>
-  <input type="mobile" id="mobile" class="form-control">
-  </div>
-  </div>
-  <div class="row form-group">
-    <div class="btn-3">
-      <a href="{{ site.baseurl }}/contact-success">Download BiosCreator</a>
-    </div>
-  </div>
-  </form>
-  </div>
-
   </section>
+
+  <script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+ </script>
