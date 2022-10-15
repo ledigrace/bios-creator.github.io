@@ -21,20 +21,20 @@ map:
     </div>
 
     <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
-    <form action="/contact-success" method="post" class="contact-form">
+    <form action="/contact-success" method="post" class="contact-form" id="bioscreator">
     <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
     <div class="row form-group">
     <div class="col-md-6 mb-3 mb-md-0">
     <div class="f-name">
     <label class="text-black" for="fname" style="margin:20px 0 5px;">First Name</label>
     </div>
-    <input type="text" id="fname" class="form-control">
+    <input type="text" id="fname" name="first_name" class="form-control">
     </div>
     <div class="col-md-6">
     <div class="f-name">
     <label class="text-black" for="lname" style="margin:20px 0 5px;">Last Name</label>
     </div>
-    <input type="text" id="lname" class="form-control">
+    <input type="text" id="lname" name="last_name" class="form-control">
     </div>
     </div>
     <div class="row form-group">
@@ -42,7 +42,7 @@ map:
     <div class="f-name">
     <label class="text-black" for="address" style="margin:20px 0 5px;">Address</label>
     </div>
-    <input type="address" id="address" class="form-control">
+    <input type="address" id="address" name="address" class="form-control">
     </div>
     </div>
     <div class="row form-group">
@@ -50,7 +50,7 @@ map:
     <div class="f-name">
     <label class="text-black" for="email" style="margin:20px 0 5px;">Email</label>
     </div>
-    <input type="email" id="email" class="form-control">
+    <input type="email" id="email" name="email" class="form-control">
     </div>
     </div>
 
@@ -71,7 +71,7 @@ map:
       <div class="f-name">
       <label class="text-black" for="message" style="margin:20px 0 5px;">Message</label>
       </div>
-      <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="subject" class="form-control" name="message" placeholder="Write something.." style="height:200px"></textarea>
       </div>
       </div>
 
