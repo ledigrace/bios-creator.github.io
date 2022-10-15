@@ -42,3 +42,19 @@
  *
  */
 -->
+
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/fwRqmLvd0T82qcqB/',
+        type:'post',
+        data:$("#bioscreator").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
