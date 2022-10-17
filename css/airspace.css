@@ -280,12 +280,12 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #testimonial .block h2 {
   line-height: 27px;
-  color: #5C5C5C;
+  color: #000;
   padding-top: 110px;
 }
 #testimonial .block p {
   padding-top: 50px;
-  color: #7B7B7B;
+  color: #000;
 }
 #testimonial .counter-box li {
   width: 50%;

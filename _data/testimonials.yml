@@ -1,7 +1,7 @@
-- name: Jess Yanga
-  title: CEO of JY Vision
-  testimonial: "With BiosCreator, now it is easy to edit and create Dell stock firmware."
-  image: img\jess.jpg
+- name: Reynaldo Alaman
+  title:
+  testimonial:
+  image: img\testimonials\Reyn Alaman.png
 - name: Sammy Pacada
   title: Laptop Technician
   testimonial: "I got a problem with Bios password, I downloaded stock firmware, removed the CAP header using BiosCreator. Now it's fixed!"

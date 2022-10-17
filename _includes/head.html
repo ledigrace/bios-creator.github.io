@@ -46,11 +46,12 @@
 <script>
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/fwRqmLvd0T82qcqB/',
+        url:'https://api.apispreadsheets.com/data/CSkTaxXvzaLHek0I/',
         type:'post',
         data:$("#bioscreator").serializeArray(),
         success: function(){
-          alert("Form Data Submitted :)")
+          // alert("Form Data Submitted :)")
+          window.location = "{{ site.baseurl }}/ty-page";
         },
         error: function(){
           alert("There was an error :(")

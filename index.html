@@ -110,48 +110,61 @@ permalink: /
 <!-- Content Start -->
 <section id="testimonial">
   <div class="container">
+  <div class="container feedback">
     <div class="row">
-      <div class="section-title text-center">
-        <h2>Fun Facts About Us</h2>
-        <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        {% if site.data.funfacts.size > 0 %}
+      <div class="col-md-7 col-sm-12">
         <div class="block">
-          {% for ff in site.data.funfacts %}
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="{{ ff.icon }}"></i>
-                <h4 class="counter">{{ ff.counter }}</h4>
-                <span>{{ ff.text }}</span>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
-      <div class="col-md-6">
-        {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
-                <img src="img/cotation.png" alt="IMG">
-                <p>{{ tm.testimonial }}</p>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
-                </div>
-            </div>
-            {% endfor %}
+          <div class="section-title text-center">
+            <h2>Testimonials</h2>
+            <p>Feedbacks from our customers</p>
+            <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
           </div>
         </div>
-        {% endif %}
-      </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12 bg-slides">
+        <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides gallery">
+          <img src="img\testimonials\Reyn Alaman.png.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-display-container mySlides gallery">
+          <img src="img\testimonials\Rechie Hilario.png.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-display-container mySlides gallery">
+          <img src="img\testimonials\Eric Villos.png.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-display-container mySlides gallery">
+          <img src="img\testimonials\Cris Sabejon.png.jpg" style="width:100%">
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+      </div><!-- .col-md-5 close -->
     </div>
   </div>
 </section>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
