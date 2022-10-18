@@ -61,6 +61,15 @@ a:active {
   color: #666;
   font-size: 20px;
 }
+.section-title2 {
+  margin-bottom: 70px;
+}
+.section-title2 h2 {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 600;
+  color: #000;
+}
 /*--
 	Header Start
 --*/
@@ -101,10 +110,9 @@ header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/dashboard.webp") no-repeat;
+  background: url("../img/dashboard.webp.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 10% 20%;
   padding: 200px 50px 280px 50px;
   position: relative;
 }
@@ -280,11 +288,12 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #testimonial .block h2 {
   line-height: 27px;
+  padding-right: 40px;
   color: #000;
-  padding-top: 110px;
 }
 #testimonial .block p {
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-right: 40px;
   color: #000;
 }
 #testimonial .counter-box li {

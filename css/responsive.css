@@ -395,6 +395,82 @@ px      68    160    252    344    436    */
 	Overrides styles for devices with a
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+@media only screen and (min-width:320px) and (max-width: 478px){
+  #slider .block h1{
+    font-size: 25px;
+  }
+  #slider:before{
+    background: linear-gradient(to left, #8b86a312, #363142);
+  }
+  .button a{
+    padding: 16px 20px;
+  }
+  #intro{
+    padding: 50px 0;
+  }
+  #intro .block h2{
+    text-align: center;
+  }
+  #intro .section-title p{
+    padding: 20px;
+  }
+  #intro .block img{
+    max-width: 290px;
+  }
+  .row-2{
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .nav>li{
+    text-align: center;
+  }
+  #testimonial{
+    padding: 50px 0;
+  }
+  .section-title2 h2{
+    font-size: 30px;
+  }
+  #testimonial .block h2{
+    padding: 0 20px;
+  }
+  #testimonial .block p{
+    padding: 0 20px;
+    text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .section-title{
+    margin-bottom: 40px;
+  }
+  .w3-display-left{
+    right: 95%;
+    top: 80px;
+  }
+  .w3-display-right{
+    right: -4%;
+    top: 80px;
+  }
+  footer .footer-manu ul{
+    padding: 10px 20px;
+  }
+  footer .footer-manu ul li{
+    padding: 0 5px;
+  }
+  .copyright{
+    padding: 20px;
+  }
+  .question{
+    padding: 20px;
+  }
+  .leakylink{
+    font-size: 19px;
+  }
+  .sub-btn{
+    margin: 30px 120px;
+  }
+}
+
+
 @media only screen and (min-width: 479px) and (max-width: 480px) {
   #intro .block h2 {
     text-align: center;
@@ -512,6 +588,24 @@ px      68    160    252    344    436    */
   }
   .pblog{
     margin: 20px;
+  }
+  .w3-display-left{
+    right: 96%;
+  }
+  .w3-display-right{
+    right: -2%;
+  }
+  #testimonial .block h2{
+    padding: 0 20px;
+  }
+  #testimonial .block p{
+    padding: 20px;
+  }
+  .tel-verify{
+    margin-left: 50px;
+  }
+  .sub-btn{
+    margin: 30px 130px;
   }
 }
 
