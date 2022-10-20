@@ -396,6 +396,10 @@ px      68    160    252    344    436    */
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 @media only screen and (min-width:320px) and (max-width: 478px){
+  .navbar-brand>img{
+    margin-top: 25px;
+    width: 200px;
+  }
   #slider .block h1{
     font-size: 25px;
   }
@@ -427,8 +431,12 @@ px      68    160    252    344    436    */
   #testimonial{
     padding: 50px 0;
   }
+  .section-title2{
+    margin-bottom: 40px;
+  }
   .section-title2 h2{
     font-size: 30px;
+    margin: 0;
   }
   #testimonial .block h2{
     padding: 0 20px;
@@ -443,18 +451,50 @@ px      68    160    252    344    436    */
     margin-bottom: 40px;
   }
   .w3-display-left{
-    right: 95%;
-    top: 80px;
+    right: 89%;
+    top: 160px;
+    font-size: 30px;
   }
   .w3-display-right{
-    right: -4%;
-    top: 80px;
+    right: 4%;
+    top: 160px;
+    font-size: 30px;
+  }
+  .feedback{
+    padding: 0 30px;
   }
   footer .footer-manu ul{
     padding: 10px 20px;
   }
   footer .footer-manu ul li{
     padding: 0 5px;
+  }
+  .tos-h2{
+    font-size: 30px;
+    margin: 30px;
+  }
+  .tos{
+    padding: 20px 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  .privacy-h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 30px;
+  }
+  .privacy {
+    padding: 20px 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  #how-do-i-withdraw-my-consent, #payment, #links {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px 40px;
   }
   .copyright{
     padding: 20px;
@@ -466,7 +506,7 @@ px      68    160    252    344    436    */
     font-size: 19px;
   }
   .sub-btn{
-    margin: 30px 120px;
+    margin: 30px 90px;
   }
 }
 
@@ -590,16 +630,26 @@ px      68    160    252    344    436    */
     margin: 20px;
   }
   .w3-display-left{
-    right: 96%;
+    right: 92%;
+    top: 260px;
+    font-size: 30px;
   }
   .w3-display-right{
-    right: -2%;
+    right: 3%;
+    top: 265px;
+    font-size: 30px;
+  }
+  #testimonial{
+    padding: 50px 0;
   }
   #testimonial .block h2{
     padding: 0 20px;
   }
   #testimonial .block p{
     padding: 20px;
+  }
+  .feedback{
+    padding: 0 40px;
   }
   .tel-verify{
     margin-left: 50px;
@@ -661,6 +711,22 @@ px      68    160    252    344    436    */
   .pblog{
     margin: 30px;
   }
+  #testimonial {
+    padding: 50px 0;
+  }
+  .feedback {
+    padding: 0 40px;
+  }
+  .w3-display-left {
+    right: 94%;
+    top: 350px;
+    font-size: 40px;
+  }
+  .w3-display-right {
+    right: 2%;
+    top: 354px;
+    font-size: 40px;
+  }
   .tos{
     padding: 30px 50px;
      font-size:20px;
@@ -703,6 +769,23 @@ px      68    160    252    344    436    */
   }
   .backed{
     margin-left: 90px;
+  }
+  #testimonial{
+    padding: 70px 0;
+  }
+  .feedback {
+    padding: 0 50px;
+    margin-right: 2px;
+  }
+  .w3-display-left {
+    right: 93%;
+    top: 390px;
+    font-size: 60px;
+  }
+  .w3-display-right {
+    right: 2%;
+    top: 392px;
+    font-size: 60px;
   }
 }
 

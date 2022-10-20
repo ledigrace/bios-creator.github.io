@@ -110,7 +110,7 @@ header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/dashboard.webp.jpg") no-repeat;
+  background: url("../img/dashboard.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 200px 50px 280px 50px;
@@ -245,7 +245,7 @@ header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/updated/dashboard.jpg");
+  background: url("../img/bios.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
