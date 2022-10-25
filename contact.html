@@ -24,17 +24,11 @@ map:
     <form action="/contact-success" method="post" class="contact-form" id="bioscreator">
     <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
     <div class="row form-group">
-    <div class="col-md-6 mb-3 mb-md-0">
+    <div class="col-md-12">
     <div class="f-name">
-    <label class="text-black" for="fname" style="margin:20px 0 5px;">First Name</label>
+    <label class="text-black" for="fullname" style="margin:20px 0 5px;">Full Name</label>
     </div>
-    <input type="text" id="fname" name="first_name" class="form-control">
-    </div>
-    <div class="col-md-6">
-    <div class="f-name">
-    <label class="text-black" for="lname" style="margin:20px 0 5px;">Last Name</label>
-    </div>
-    <input type="text" id="lname" name="last_name" class="form-control">
+    <input type="text" id="full_name" name="full_name" class="form-control">
     </div>
     </div>
     <div class="row form-group">
@@ -53,6 +47,7 @@ map:
     <input type="email" id="email" name="email" class="form-control">
     </div>
     </div>
+
 
     <div class="row form-group">
     <div class="col-md-7">
@@ -74,6 +69,15 @@ map:
       <textarea id="subject" class="form-control" name="message" placeholder="Write something.." style="height:200px"></textarea>
       </div>
       </div>
+
+      <div class="tel-verify">
+       <input id="ip" type="hidden" name="ip" value="" class="form-control" />
+       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+       </div>
+       <div class="tel-verify">
+        <input id="country" type="hidden" name="country" value="" class="form-control" />
+        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
     </form>
 
     <button class="sub-btn" onclick="SubForm()">Submit</button>
