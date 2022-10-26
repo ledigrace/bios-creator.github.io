@@ -139,14 +139,14 @@
   font-size:40px;
   margin: 0 0 30px;"
 }
-#how-do-i-withdraw-my-consent, #payment, #links{
+#how-do-i-withdraw-my-consent, #payment, #l inks{
   font-weight:bold;
   font-size:22px;
   margin-bottom: 20px;
   color: #000;
 }
 .bg-ty{
-  background: url("../img/dashboard.jpg") no-repeat;
+  background: url("../img/dashboard.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 20%;

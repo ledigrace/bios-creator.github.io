@@ -110,7 +110,7 @@ header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/dashboard.jpg") no-repeat;
+  background: url("../img/dashboard.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 200px 50px 280px 50px;
