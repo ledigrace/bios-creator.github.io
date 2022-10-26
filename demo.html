@@ -10,13 +10,25 @@ permalink: /demo/
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <body onload="testMessage()">
 
+    <form>
+      <div class="tel-verify">
+       <input id="city" type="text" name="city" value="" class="form-control" />
+       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+       </div>
+       <div class="tel-verify">
+        <input id="postal" type="text" name="postal" value="" class="form-control" />
+        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
+       <div class="tel-verify">
+        <input id="country" type="text" name="country" value="" class="form-control" />
+        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
+  </form>
+  <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/>
     <button type="button" onclick="testMessage()">Click Me</button>
 
-    <div id="country"></div>
-    <div id="postal"></div>
-    <div id="city"></div>
 
   </body>
 </html>
@@ -26,13 +38,14 @@ permalink: /demo/
 async function testMessage(){
    fetchText().then(function(value) {
      displayResult(value);
+     //alert(value.country);
    })
 }
 
 function displayResult(value){
-  document.getElementById('city').innerHTML = value.city;
-  document.getElementById('postal').innerHTML = value.postal;
-  document.getElementById('country').innerHTML = value.country;
+  document.getElementById('city').value = value.city;
+  document.getElementById('postal').value = value.postal;
+  document.getElementById('country').value = value.country;
 }
 
 </script>
