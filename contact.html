@@ -12,9 +12,10 @@ map:
   zoom: 13
 ---
 
+    <div id="demo"></div>
 
 <!-- contact form start -->
-<section id="contact-form" onload="GetGeoInfo()">
+<section id="contact-form">
   <div class="container">
     <div class="container" style="text-align:center; margin-bottom:50px;">
       <h2 style="color:#000; font-weight:400; font-size: 40px; margin: 0 0 30px;">Get in touch today</h2>
@@ -22,7 +23,7 @@ map:
     </div>
 
     <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
-    <form action="/contact-success" method="post" class="contact-form" id="bioscreator">
+    <form action="/contact-success" method="post" class="contact-form" id="bioscreator" onload="fetchText">
     <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
     <div class="row form-group">
     <div class="col-md-12">
@@ -72,12 +73,24 @@ map:
       </div>
 
       <!-- hidden -->
-      <input type="text" id="city" name="city" class="form-control">
-      <input type="text" id="country" name="country" class="form-control">
-      <input type="text" id="postal" name="postal" class="form-control">
-
+      <div class="tel-verify">
+       <input id="city" type="hidden" name="city" value="" class="form-control" />
+       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+       </div>
+       <div class="tel-verify">
+        <input id="postal" type="hidden" name="postal" value="" class="form-control" />
+        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
+       <div class="tel-verify">
+        <input id="country" type="hidden" name="country" value="" class="form-control" />
+        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
     </form>
+
     <button class="sub-btn" onclick="SubForm()">Submit</button>
+
+
+
     </div>
 
     <!-- <div class="row">
@@ -116,12 +129,13 @@ map:
               <i class="fa fa-map-marker"></i><address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
             </li>
             <li>
-              <a href="mailto:cs@example.com"><i class="fa fa-envelope-o"></i>Email: support@bioscreator.com</a>
+              <a href="mailto:support@example.com"><i class="fa fa-envelope-o"></i>Email: support@bioscreator.com</a>
             </li>
             <li>
               <i class="fa fa-phone"></i>Phone:
             </li>
           </ul>
+
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
@@ -136,28 +150,22 @@ map:
   </section>
 
   <script>
-
    const phoneInputField = document.querySelector("#phone");
    const phoneInput = window.intlTelInput(phoneInputField, {
      utilsScript:
        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
 
-   GetGeoInfo();
-
-   async function GetGeoInfo(){
+   async function SubForm(){
       fetchText().then(function(value) {
         displayResult(value);
       })
    }
 
    function displayResult(value){
-     document.getElementById('full_name').value = value.city;
-     document.getElementById('address').value = value.postal;
-     document.getElementById('email').value = value.country;
-     document.getElementById('city').value = value.city;
-     document.getElementById('postal').value = value.postal;
-     document.getElementById('country').value = value.country;
+     document.getElementById('city').innerHTML = value.city;
+     document.getElementById('postal').innerHTML = value.postal;
+     document.getElementById('country').innerHTML = value.country;
    }
 
  </script>
