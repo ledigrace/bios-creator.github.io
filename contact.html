@@ -13,7 +13,7 @@ map:
 ---
 
     <div id="demo"></div>
-    
+
 <!-- contact form start -->
 <section id="contact-form">
   <div class="container">
@@ -72,10 +72,15 @@ map:
       </div>
       </div>
 
+      <!-- hidden -->
       <div class="tel-verify">
-       <input id="ip" type="hidden" name="ip" value="" class="form-control" />
+       <input id="city" type="hidden" name="city" value="" class="form-control" />
        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
        </div>
+       <div class="tel-verify">
+        <input id="postal" type="hidden" name="postal" value="" class="form-control" />
+        <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
        <div class="tel-verify">
         <input id="country" type="hidden" name="country" value="" class="form-control" />
         <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
@@ -150,4 +155,17 @@ map:
      utilsScript:
        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
+
+   async function SubForm(){
+      fetchText().then(function(value) {
+        displayResult(value);
+      })
+   }
+
+   function displayResult(value){
+     document.getElementById('city').innerHTML = value.city;
+     document.getElementById('postal').innerHTML = value.postal;
+     document.getElementById('country').innerHTML = value.country;
+   }
+
  </script>
