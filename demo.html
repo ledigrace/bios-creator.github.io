@@ -10,7 +10,7 @@ permalink: /demo/
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body onload="testMessage()">
+  <body>
 
     <form>
       <div class="tel-verify">
@@ -26,14 +26,14 @@ permalink: /demo/
         <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
         </div>
   </form>
-  <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/>
-    <button type="button" onclick="testMessage()">Click Me</button>
+    <button type="button" onclick="alert('aha!')">Click Me</button>
 
 
   </body>
 </html>
 
 <script type="text/javascript">
+testMessage();
 
 async function testMessage(){
    fetchText().then(function(value) {
