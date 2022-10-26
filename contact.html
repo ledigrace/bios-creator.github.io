@@ -12,6 +12,8 @@ map:
   zoom: 13
 ---
 
+    <div id="demo"></div>
+    
 <!-- contact form start -->
 <section id="contact-form">
   <div class="container">
@@ -21,7 +23,7 @@ map:
     </div>
 
     <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
-    <form action="/contact-success" method="post" class="contact-form" id="bioscreator">
+    <form action="/contact-success" method="post" class="contact-form" id="bioscreator" onload="fetchText">
     <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
     <div class="row form-group">
     <div class="col-md-12">
@@ -81,6 +83,7 @@ map:
     </form>
 
     <button class="sub-btn" onclick="SubForm()">Submit</button>
+
 
 
     </div>

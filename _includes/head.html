@@ -59,13 +59,14 @@ function SubForm (){
         }
     });
 }
-  async function fetchText(){
- let url = 'https://ipinfo.io/210.23.187.171/json?token=bf1eedb09dfc46';
- let response = await fetch(url);
- let data = await response.json();
 
-   const obj = JSON.parse(txt);
-    document.getElementById("demo").innerHTML = obj.country + ", " + obj.city;
+async function fetchText(){
+  let url = 'https://ipinfo.io/210.23.187.171/json?token=bf1eedb09dfc46';
+  let response = await fetch(url);
+  let data = await response.json();
+
+  return data;
 }
-fetchText();
+
+
 </script>

@@ -11,6 +11,28 @@ permalink: /demo/
     <title></title>
   </head>
   <body>
-    <p id="demo"></p>
+
+    <button type="button" onclick="testMessage()">Click Me</button>
+
+    <div id="country"></div>
+    <div id="postal"></div>
+    <div id="city"></div>
+
   </body>
 </html>
+
+<script type="text/javascript">
+
+async function testMessage(){
+   fetchText().then(function(value) {
+     displayResult(value);
+   })
+}
+
+function displayResult(value){
+  document.getElementById('city').innerHTML = value.city;
+  document.getElementById('postal').innerHTML = value.postal;
+  document.getElementById('country').innerHTML = value.country;
+}
+
+</script>
