@@ -33,19 +33,19 @@ permalink: /demo/
 </html>
 
 <script type="text/javascript">
-testMessage();
+  testMessage();
 
-async function testMessage(){
-   fetchText().then(function(value) {
-     displayResult(value);
-     //alert(value.country);
-   })
-}
+  async function testMessage(){
+     fetchText().then(function(value) {
+       displayResult(value);
+       //alert(value.country);
+     })
+  }
 
-function displayResult(value){
-  document.getElementById('city').value = value.city;
-  document.getElementById('postal').value = value.postal;
-  document.getElementById('country').value = value.country;
-}
+  function displayResult(value){
+    document.getElementById('city').value = value.city;
+    document.getElementById('postal').value = value.postal;
+    document.getElementById('country').value = value.country;
+  }
 
 </script>

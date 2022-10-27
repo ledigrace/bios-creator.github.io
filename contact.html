@@ -56,7 +56,7 @@ map:
      <label class="text-black" for="subject" style="margin:20px 0 5px;">Enter your phone number</label>
      </div>
      <div class="tel-verify">
-      <input id="phone" type="tel" name="phone" class="form-control" />
+      <input id="phone" type="tel" name="phone" placeholder="+63-(999)-999-9999" class="form-control f-phone" />
       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
       </div>
       </div>
@@ -159,5 +159,10 @@ map:
      document.getElementById('postal').value = value.postal;
      document.getElementById('country').value = value.country;
    }
+
+
+   $(document).ready(function () {
+       $(".f-phone").inputmask("+63-(999)-999-9999");
+   });
 
  </script>
