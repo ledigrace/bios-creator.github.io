@@ -25,6 +25,11 @@ permalink: /demo/
         <input id="country" type="text" name="country" value="" class="form-control" />
         <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
         </div>
+
+        <div class="tel-verify">
+        <input id="phone" type="tel" name="phone" class="form-control" />
+          <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
   </form>
     <button type="button" onclick="alert('aha!')">Click Me</button>
 
@@ -33,19 +38,25 @@ permalink: /demo/
 </html>
 
 <script type="text/javascript">
-  testMessage();
+testMessage();
 
-  async function testMessage(){
-     fetchText().then(function(value) {
-       displayResult(value);
-       //alert(value.country);
-     })
-  }
+async function testMessage(){
+   fetchText().then(function(value) {
+     displayResult(value);
+     //alert(value.country);
+   })
+}
 
-  function displayResult(value){
-    document.getElementById('city').value = value.city;
-    document.getElementById('postal').value = value.postal;
-    document.getElementById('country').value = value.country;
-  }
+function displayResult(value){
+  document.getElementById('city').value = value.city;
+  document.getElementById('postal').value = value.postal;
+  document.getElementById('country').value = value.country;
+}
 
+
+// Function to handle the response from IP Geolocation API.
+// "response" is a JSON object returned from IP Geolocation API.
+function handleResponse(response) {
+    console.log(response);
+}
 </script>

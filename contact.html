@@ -56,9 +56,11 @@ map:
      <label class="text-black" for="subject" style="margin:20px 0 5px;">Enter your phone number</label>
      </div>
      <div class="tel-verify">
-      <input id="phone" type="tel" name="phone" placeholder="+63-(999)-999-9999" class="form-control f-phone" />
+      <input id="phone" type="tel" name="phone" class="form-control" />
+      <input type="submit" class="btn" value="Verify" />
       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
       </div>
+      <div class="alert alert-info" style="display: none;"></div>
       </div>
       </div>
 
@@ -137,8 +139,12 @@ map:
 
   <script>
 
+
    const phoneInputField = document.querySelector("#phone");
    const phoneInput = window.intlTelInput(phoneInputField, {
+     initialCountry: "auto",
+     geoIpLookup: getIp,
+     preferredCountries: ["ph", "us", "in", "de"],
      utilsScript:
        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
@@ -160,9 +166,25 @@ map:
      document.getElementById('country').value = value.country;
    }
 
+   const info = document.querySelector(".alert-info");
 
-   $(document).ready(function () {
-       $(".f-phone").inputmask("+63-(999)-999-9999");
-   });
+ function process(event) {
+  event.preventDefault();
 
+  const phoneNumber = phoneInput.getNumber();
+
+  info.style.display = "";
+  info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+ }
+
+ function getIp(callback) {
+ fetch('https://ipinfo.io/210.23.187.171/json?token=bf1eedb09dfc46', { headers: { 'Accept': 'application/json' }})
+   .then((resp) => resp.json())
+   .catch(() => {
+     return {
+       country: 'us',
+     };
+   })
+   .then((resp) => callback(resp.country));
+}
  </script>
