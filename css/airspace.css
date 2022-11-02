@@ -314,8 +314,6 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #testimonial .testimonial-carousel {
   text-align: center;
-  width: 75%;
-  border: 1px solid #DEDEDE;
   padding: 24px;
   margin: 0 auto;
 }

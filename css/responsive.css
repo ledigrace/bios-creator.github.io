@@ -400,14 +400,34 @@ px      68    160    252    344    436    */
     margin-top: 25px;
     width: 200px;
   }
+  #slider{
+    background-position: 5% 45%;
+    background-size: 725px 785px;
+  }
   #slider .block h1{
-    font-size: 25px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #slider .block p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .button{
+    text-align: center;
   }
   #slider:before{
     background: linear-gradient(to left, #8b86a312, #363142);
   }
   .button a{
     padding: 16px 20px;
+  }
+  #feature{
+    background-position: 4% -72%;
+    background-size: 660px 730px;
+  }
+  .swiper-slide{
+    flex-direction: column;
+    justify-content: center;
   }
   #intro{
     padding: 50px 0;
@@ -419,7 +439,7 @@ px      68    160    252    344    436    */
     padding: 20px;
   }
   #intro .block img{
-    max-width: 290px;
+    max-width: 345px;
   }
   .row-2{
     display: flex;
@@ -761,14 +781,16 @@ px      68    160    252    344    436    */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
+  .row-2{
+    display: flex;
+    flex-flow: column-reverse;
+  }
   .col-md-offset-2{
-    margin-left: 10%;
+    margin: 0 10px;
   }
   .col-md-7{
-    width: 50%
-  }
-  .backed{
-    margin-left: 90px;
+    text-align: center;
+    margin-bottom: 30px;
   }
   #testimonial{
     padding: 70px 0;
@@ -786,6 +808,50 @@ px      68    160    252    344    436    */
     right: 2%;
     top: 392px;
     font-size: 60px;
+  }
+  #slider .block h1,
+  #slider .block p,
+  .button{
+    text-align: center;
+  }
+  .container{
+    width: 721px;
+  }
+  #intro .block img{
+    height: auto;
+    width: auto;
+    max-width: 700px;
+    max-height: 400px;
+  }
+  #feature{
+    background-position: 40% 10%;
+    background-size: 893px 800px;
+  }
+  #slider{
+    background-position: 5% 45%;
+    background-size: 1080px 1100px;
+  }
+}
+
+@media only screen and (min-width:820px) and (max-width: 1025px){
+  #slider{
+    background-position: 5% 45%;
+    background-size: 1080px 1214px;
+  }
+  #intro .block img{
+    height: auto;
+    width: auto;
+    max-width: 721px;
+    max-height: 400px;
+  }
+  .col-md-7{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #feature{
+    background-position: 48% -2%;
+    background-size: 893px 836px;
   }
 }
 

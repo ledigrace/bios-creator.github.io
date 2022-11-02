@@ -12,7 +12,7 @@ permalink: /
         <div class="block">
           <h1 class="animated fadeInUp">Get <strong>BiosCreator</strong> Now! </h1>
           <p class="animated fadeInUp">A simplified solution for Laptop and Computer Technicians </p>
-          <div class="button">
+          <div class="button animated fadeInUp">
             <a href="{{ site.baseurl }}/contact">Get BiosCreator</a>
           </div>
         </div>
@@ -80,7 +80,7 @@ permalink: /
           <img src="img\hero-image.jpg.png" alt="Img">
         </div>
       </div><!-- .col-md-5 close -->
-      <div class="col-md-7 col-sm-12">
+      <div class="col-md-7 col-sm-12 b-support">
         <div class="block">
           <div class="section-title backed">
             <h2>Backed by LeakyMosfet Support</h2>
@@ -121,17 +121,46 @@ permalink: /
   <div class="container">
     <div class="row feedback">
       <div class="col-12">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" style="height:400px;">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+              <div class="testimonial-carousel">
+                <img src="img\testimonials\marcjoffer.png" alt="Cris Sabejon">
+              </div>
+              <div class="">
+                <blockquote>
+                  <p>"I got a problem on my BiosCreator regarding my license key.  They assist me immediately regarding the issue. Leaky Mosfet will never left you out. Thank you Leaky Mosfet!"</p>
+                  <p class="author">Marc Joffer Galvano</p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-carousel">
+                <img src="img\testimonials\Eric Villos.png" alt="Eric villos">
+              </div>
+              <blockquote>
+                <p>"It's easy to extract bios on using BiosCreator by Leaky Mosfet."</p>
+                <p class="author">Eric Villos</p>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-carousel">
+                <img src="img\testimonials\JOSEPH RALTE FROM INDIA.png" alt="Joseph Ralte">
+              </div>
+              <blockquote>
+                <p>"The software was very good and easy to use"</p>
+                <p class="author">Joseph Ralte</p>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-carousel">
+                <img src="img\testimonials\Ariel delos santos.jpg" alt="Ariel Delos Santos">
+              </div>
+              <blockquote>
+                <p>"One of the best product of Leaky Mosfet, BiosCreator, Now it's easy to find a bios flash."</p>
+                <p class="author">Ariel Delos Santos</p>
+              </blockquote>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -141,21 +170,15 @@ permalink: /
 </section>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
+  var swiper = new Swiper(".mySwiper", {
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 </script>
