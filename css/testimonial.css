@@ -26,12 +26,13 @@
         -webkit-align-items: center;
         align-items: center;
       }
-
+      .user{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
       .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 80px;
       }
 
       blockquote {

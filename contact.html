@@ -22,7 +22,7 @@ map:
     </div>
 
     <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
-    <form action="/contact-success" method="post" class="contact-form" id="bioscreator">
+    <form action="" method="post" class="contact-form" id="bioscreator">
     <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
     <div class="row form-group">
     <div class="col-md-12">
@@ -60,7 +60,6 @@ map:
       <input type="submit" class="btn" value="Verify" />
       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
       </div>
-      <div class="alert alert-info" style="display: none;"></div>
       </div>
       </div>
 
@@ -165,17 +164,6 @@ map:
      document.getElementById('postal').value = value.postal;
      document.getElementById('country').value = value.country;
    }
-
-   const info = document.querySelector(".alert-info");
-
- function process(event) {
-  event.preventDefault();
-
-  const phoneNumber = phoneInput.getNumber();
-
-  info.style.display = "";
-  info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
- }
 
  function getIp(callback) {
  fetch('https://ipinfo.io/210.23.187.171/json?token=bf1eedb09dfc46', { headers: { 'Accept': 'application/json' }})

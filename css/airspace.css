@@ -61,9 +61,6 @@ a:active {
   color: #666;
   font-size: 20px;
 }
-.section-title2 {
-  margin-bottom: 70px;
-}
 .section-title2 h2 {
   text-transform: uppercase;
   font-size: 45px;
@@ -316,6 +313,7 @@ header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   padding: 24px;
   margin: 0 auto;
+  width: 700px;
 }
 #testimonial .testimonial-carousel img {
   padding-bottom: 38px;
@@ -328,6 +326,11 @@ header .navbar-default .navbar-nav li a:hover {
 #testimonial .testimonial-carousel .user img {
   padding-bottom: 0px;
   border-radius: 500px;
+  margin-bottom: 15px;
+}
+.user-name{
+  font-size: 14px;
+  font-weight: 600;
 }
 #testimonial .testimonial-carousel .user p {
   padding-bottom: 0;

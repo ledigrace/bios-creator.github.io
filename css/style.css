@@ -69,17 +69,8 @@
 	color: #3d3535;
   border: 1px solid #3d3535;
 }
-
-.sub-btn {
-   margin: 30px 180px;
-   text-align: center;
-}
-
-.sub-btn:hover {
-  margin: 30px 180px;
-  text-align: center;
-}
 .sub-btn{
+  margin: 30px 180px;
   text-align: center;
   background: #113768;
   border-radius: 3px;
