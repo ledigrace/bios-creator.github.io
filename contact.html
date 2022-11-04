@@ -56,7 +56,7 @@ map:
      <label class="text-black" for="subject" style="margin:20px 0 5px;">Enter your phone number</label>
      </div>
      <div class="tel-verify">
-      <input id="phone" type="tel" name="phone" class="form-control" />
+      <input id="phone" type="tel" name="phone" pattern="^\d{10}$" class="form-control" />
       <input type="submit" class="btn" value="Verify" />
       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
       </div>
@@ -81,33 +81,7 @@ map:
     <button class="sub-btn" onclick="SubForm()">Submit</button>
     </div>
 
-    <!-- <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button class="btn btn-default" type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div> -->
+
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
@@ -175,4 +149,14 @@ map:
    })
    .then((resp) => callback(resp.country));
 }
+
+document.getElementById('phone').addEventListener('blur', function (e) {
+  var x = e.target.value.replace(/\D/g, '').match(/(\d{4})(\d{3})(\d{4})/);
+  e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
+});
+
+document.getElementById('phone').addEventListener('input', function (e) {
+  var x = e.target.value.replace(/\D/g, '').match(/(\d{0,4})(\d{0,3})(\d{0,4})/);
+  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
  </script>
