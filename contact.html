@@ -21,55 +21,56 @@ map:
       <p style="margin-top:10px; font-size:22px;">We'd love to help you increase your repair success rate.</p>
     </div>
 
-    <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
+  <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
     <form action="" method="post" class="contact-form" id="bioscreator">
-    <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
-    <div class="row form-group">
-    <div class="col-md-12">
-    <div class="f-name">
-    <label class="text-black" for="fullname" style="margin:20px 0 5px;">Full Name</label>
-    </div>
-    <input type="text" id="full_name" name="full_name" class="form-control">
-    </div>
-    </div>
-    <div class="row form-group">
-    <div class="col-md-12">
-    <div class="f-name">
-    <label class="text-black" for="address" style="margin:20px 0 5px;">Address</label>
-    </div>
-    <input type="address" id="address" name="address" class="form-control">
-    </div>
-    </div>
-    <div class="row form-group">
-    <div class="col-md-12">
-    <div class="f-name">
-    <label class="text-black" for="email" style="margin:20px 0 5px;">Email</label>
-    </div>
-    <input type="email" id="email" name="email" class="form-control">
-    </div>
-    </div>
+          <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
 
-
-    <div class="row form-group">
-    <div class="col-md-7">
-     <div class="f-name">
-     <label class="text-black" for="subject" style="margin:20px 0 5px;">Enter your phone number</label>
-     </div>
-     <div class="tel-verify">
-      <input id="phone" type="tel" name="phone" pattern="^\d{10}$" class="form-control" />
-      <input type="submit" class="btn" value="Verify" />
-      <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
-      </div>
-      </div>
+      <div class="row form-group">
+        <div class="col-md-12">
+          <div class="f-name">
+            <label class="text-black" for="fullname" style="margin:20px 0 5px;">Full Name</label>
+          </div>
+            <input type="text" id="full_name" name="full_name" class="form-control">
+        </div>
       </div>
 
       <div class="row form-group">
-      <div class="col-md-12">
-      <div class="f-name">
-      <label class="text-black" for="message" style="margin:20px 0 5px;">Message</label>
+        <div class="col-md-12">
+          <div class="f-name">
+            <label class="text-black" for="address" style="margin:20px 0 5px;">Address</label>
+          </div>
+            <input type="address" id="address" name="address" class="form-control">
+        </div>
       </div>
-      <textarea id="subject" class="form-control" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+      <div class="row form-group">
+        <div class="col-md-12">
+          <div class="f-name">
+            <label class="text-black" for="email" style="margin:20px 0 5px;">Email</label>
+          </div>
+            <input type="email" id="email" name="email" class="form-control">
+        </div>
       </div>
+
+      <div class="row form-group">
+        <div class="col-md-7">
+         <div class="f-name">
+           <label class="text-black" for="subject" style="margin:20px 0 5px;">Enter your phone number</label>
+         </div>
+         <div class="tel-verify">
+          <input id="phone" type="tel" name="phone" class="form-control f-phone"/>
+      <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
+        </div>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md-12">
+          <div class="f-name">
+            <label class="text-black" for="message" style="margin:20px 0 5px;">Message</label>
+          </div>
+            <textarea id="subject" class="form-control" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
       </div>
 
       <!-- hidden -->
@@ -78,7 +79,7 @@ map:
       <input type="hidden" id="postal" name="postal" class="form-control">
 
     </form>
-    <button class="sub-btn" onclick="SubForm()">Submit</button>
+        <button class="sub-btn" onclick="SubForm()">Submit</button>
     </div>
 
 
@@ -112,16 +113,6 @@ map:
 
   <script>
 
-
-   const phoneInputField = document.querySelector("#phone");
-   const phoneInput = window.intlTelInput(phoneInputField, {
-     initialCountry: "auto",
-     geoIpLookup: getIp,
-     preferredCountries: ["ph", "us", "in", "de"],
-     utilsScript:
-       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-   });
-
    GetGeoInfo();
 
    async function GetGeoInfo(){
@@ -150,13 +141,64 @@ map:
    .then((resp) => callback(resp.country));
 }
 
-document.getElementById('phone').addEventListener('blur', function (e) {
-  var x = e.target.value.replace(/\D/g, '').match(/(\d{4})(\d{3})(\d{4})/);
-  e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
-});
+// initial country - auto and input mask
+// Make sure to place this snippet in the footer or at least after
+// the HTML input we're targeting.
 
-document.getElementById('phone').addEventListener('input', function (e) {
-  var x = e.target.value.replace(/\D/g, '').match(/(\d{0,4})(\d{0,3})(\d{0,4})/);
-  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+$(document).ready(function() {
+  var phoneInputID = "#phone";
+  var input = document.querySelector(phoneInputID);
+  var iti = window.intlTelInput(input, {
+    // allowDropdown: false,
+    // autoHideDialCode: false,
+    // autoPlaceholder: "off",
+    // dropdownContainer: document.body,
+    // excludeCountries: ["us"],
+    formatOnDisplay: true,
+    geoIpLookup: function(callback) {
+      $.get("https://ipinfo.io/210.23.187.171/json?token=bf1eedb09dfc46", function() {}, "jsonp").always(function(resp) {
+        var countryCode = (resp && resp.country) ? resp.country : "";
+        callback(countryCode);
+      });
+    },
+    hiddenInput: "full_number",
+    initialCountry: "auto",
+    // localizedCountries: { 'de': 'Deutschland' },
+    // nationalMode: false,
+    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    // placeholderNumberType: "MOBILE",
+    preferredCountries: ['es'],
+    // separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+  });
+
+
+  $(phoneInputID).on("countrychange", function(event) {
+
+    // Get the selected country data to know which country is selected.
+    var selectedCountryData = iti.getSelectedCountryData();
+
+    // Get an example number for the selected country to use as placeholder.
+    newPlaceholder = intlTelInputUtils.getExampleNumber(selectedCountryData.iso2, true, intlTelInputUtils.numberFormat.INTERNATIONAL),
+
+      // Reset the phone number input.
+      iti.setNumber("");
+
+    // Convert placeholder as exploitable mask by replacing all 1-9 numbers with 0s
+    mask = newPlaceholder.replace(/[1-9]/g, "0");
+
+    // Apply the new mask for the input
+    $(this).mask(mask);
+  });
+
+
+  // When the plugin loads for the first time, we have to trigger the "countrychange" event manually,
+  // but after making sure that the plugin is fully loaded by associating handler to the promise of the
+  // plugin instance.
+
+  iti.promise.then(function() {
+    $(phoneInputID).trigger("countrychange");
+  });
+
 });
  </script>
