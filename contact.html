@@ -22,7 +22,7 @@ map:
     </div>
 
   <div class="contact-box" style="flex-flow:wrap;max-width:600px;margin: 0 auto;">
-    <form action="" method="post" class="contact-form" id="bioscreator">
+    <form action="" method="post" name="contact" class="contact-form" id="bioscreator">
           <h2 class="h4 text-black mb-5" style="text-align:center;font-weight:300;font-size:40px;margin:0 030px;">Contact Form</h2>
 
       <div class="row form-group">
@@ -31,15 +31,6 @@ map:
             <label class="text-black" for="fullname" style="margin:20px 0 5px;">Full Name</label>
           </div>
             <input type="text" id="full_name" name="full_name" class="form-control">
-        </div>
-      </div>
-
-      <div class="row form-group">
-        <div class="col-md-12">
-          <div class="f-name">
-            <label class="text-black" for="address" style="margin:20px 0 5px;">Address</label>
-          </div>
-            <input type="address" id="address" name="address" class="form-control">
         </div>
       </div>
 
@@ -61,15 +52,6 @@ map:
           <input id="phone" type="tel" name="phone" class="form-control f-phone"/>
       <!-- <input id="btn-verify" type="submit" class="btn" value="Verify" style="float:right;"/> -->
         </div>
-        </div>
-      </div>
-
-      <div class="row form-group">
-        <div class="col-md-12">
-          <div class="f-name">
-            <label class="text-black" for="message" style="margin:20px 0 5px;">Message</label>
-          </div>
-            <textarea id="subject" class="form-control" name="message" placeholder="Write something.." style="height:200px"></textarea>
         </div>
       </div>
 
@@ -201,4 +183,9 @@ $(document).ready(function() {
   });
 
 });
+
+function isNotEmpty(value) {
+ if (value == null || typeof value == 'undefined' ) return false;
+ return (value.length > 0);
+}
  </script>
