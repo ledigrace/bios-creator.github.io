@@ -53,6 +53,25 @@
 
 <script>
 function SubForm (){
+  let x = document.forms["contact"]["full_name"].value;
+  let y = document.forms["contact"]["email"].value;
+  let z = document.forms["contact"]["phone"].value;
+if (x == "") {
+  document.getElementById("full_name").placeholder = "Please fill out this field";
+  document.getElementById("full_name").style.boxShadow = "0 0 2px 1px #cc0001";
+  return false;
+}
+if (y == "") {
+  document.getElementById("email").placeholder = "Please fill out this field";
+  document.getElementById("email").style.boxShadow = "0 0 2px 1px #cc0001";
+  return false;
+}
+if (z == "") {
+  document.getElementById("phone").placeholder = "Please fill out this field";
+  document.getElementById("phone").style.boxShadow = "0 0 2px 1px #cc0001";
+  return false;
+}
+else{
     $.ajax({
         url:'https://api.apispreadsheets.com/data/CSkTaxXvzaLHek0I/',
         type:'post',
@@ -65,6 +84,7 @@ function SubForm (){
           alert("There was an error :(")
         }
     });
+}
 }
 
 async function fetchText(){

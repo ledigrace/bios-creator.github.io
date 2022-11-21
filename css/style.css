@@ -156,6 +156,52 @@
   background: linear-gradient(to left, #8b86a32b, #302d355e);
   opacity: 0.8;
 }
+.download-btn{
+  position: relative;
+  background: #4285F4;
+  color: #fff;
+  width: 260px;
+  padding:10px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  transition: background 0.3s ease;
+}
+.download-btn:hover{
+  background: #2874F3;
+  color: #fff;
+}
+.download-btn i {
+  margin-left: 5px;
+}
+.countdown{
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.countdown span{
+  color: #8693F6;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.pleaseWait-text{
+  font-size: 1.1em;
+  font-weight: 600;
+  display: none;
+}
+.manualDownload-text{
+  font-size: 1.1em;
+  font-weight: 600;
+  display: none;
+}
+.manualDownload-link{
+  color: #0693F6;
+  font-weight: 800;
+  text-decoration: none;
+}
 .bg-con{
   text-align:center;
   margin-bottom:50px;
