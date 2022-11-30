@@ -16,7 +16,7 @@
   padding: 40px;
   width: 100%;
   min-height: 150px;
-  background-color: white;
+  /* background-color: white; */
   border-bottom: 1px dotted #ddd;
 }
 
@@ -34,23 +34,29 @@
 }
 
 .button a {
+  margin: 0 40%;
   color: #fff;
   width: 22%;
-  background-color: #113768;
+  background-color: var(--button-color);
   padding: 16px 50px;
   text-decoration: none;
-  border: 1px solid #113768;
-  border-radius: 3px;
+  border: 1px solid var(--button-color);
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .button a:hover {
-  color: #ffff;
+  margin: 0 40%;
+  color: #fff;
   width: 22%;
-  background-color: rgb(76 92 150 / 85%);
+  background-color: var(--button-color-hover);
   padding: 16px 50px;
   text-decoration: none;
-  border: 1px solid #113768;
+  border: 1px solid var(--button-color);
   transition: .3s ease-in-out;
-  border-radius: 3px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .btn-2 {
@@ -72,28 +78,30 @@
 .sub-btn{
   margin: 30px 180px;
   text-align: center;
-  background: #113768;
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--button-color);
+  border-radius: 30px;
+  border: 1px solid #1A8CD8;
   padding: 16px 10px;
   transition: .25s ease-in-out;
   width: 40%;
   color: #fff;
+  text-transform: uppercase;
 }
 .sub-btn:hover {
   text-align: center;
-  background: rgb(76 92 150 / 85%);
-  color: #ffff;
-  border: 1px solid #3d3535;
+  background: var(--button-color-hover);
+  color: #fff;
+  border: 1px solid #1A8CD8;
   width: 40%;
+  text-transform: uppercase;
 }
 .btn-discord {
   margin-top: 50px;
 }
 .btn-discord a {
   text-align: center;
-  background: #113768;
-  border-radius: 3px;
+  background: var(--button-color);
+  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 16px 50px;
   transition: .25s ease-in-out;
@@ -102,11 +110,10 @@
 }
 .btn-discord a:hover {
   text-align: center;
-  background: #fff;
-  color: #3d3535;
-  border: 1px solid #3d3535;
+  background: var(--button-color-hover);
+  color: #fff;
+  border: 1px solid #1A8CD8;
   width: 40%;
-  color: #113768;
 }
 .tos{
    font-size:22px;
@@ -137,8 +144,6 @@
   color: #000;
 }
 .bg-ty{
-  background: url("../img/dashboard.png") no-repeat;
-  background-size: cover;
   background-attachment: fixed;
   background-position: 10% 20%;
   padding: 100px 0;
@@ -153,12 +158,10 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #8b86a32b, #302d355e);
-  opacity: 0.8;
 }
 .download-btn{
   position: relative;
-  background: #4285F4;
+  background: #113768;
   color: #fff;
   width: 260px;
   padding:10px;
@@ -181,6 +184,7 @@
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
 }
 .countdown span{
   color: #8693F6;
@@ -191,12 +195,14 @@
   font-size: 1.1em;
   font-weight: 600;
   display: none;
+  color: var(--primary-color-text);
 }
 .manualDownload-text{
   font-size: 1.1em;
   font-weight: 600;
   display: none;
   position: relative;
+  color: var(--primary-color-text);
 }
 .manualDownload-link{
   color: #0693F6;
@@ -208,7 +214,7 @@
   margin-bottom:50px;
 }
 .bg-h2{
-  color:#fff;
+  color:var(--primary-color-text);
   font-weight:400;
   font-size: 80px;
   margin: 0 0 30px;
@@ -232,6 +238,7 @@
 #testimonial{
   padding: 40px 0;
   position: relative;
+  background-color: var(--primary-color);
 }
 #testimonial:before {
   content: "";
