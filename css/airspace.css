@@ -22,20 +22,24 @@ body {
 :root{
   --primary-color:#fff;
   --primary-color-text:#000;
+  --primary-box-shadow:#b9b9b9;
   --secondary-color:#E6E6E6;
   --tertiary-color:#F5F6FA;
   --button-color-hover:#1a8cd8c4;
   --button-color:#1A8CD8;
+  --border-bottom-color:#dfdfdf;
 
 }
 .dark-theme{
   --primary-color:#212121;
   --primary-color-text:#fff;
   --primary-text-rev:#113768;
+  --primary-box-shadow:#686666;
   --secondary-color:#E6E6E6;
   --tertiary-color:#292929;
   --button-color-hover:#1a8cd8c4;
   --button-color:#1A8CD8;
+  --border-bottom-color:#525252;
 }
 h1,
 h2,
@@ -96,6 +100,7 @@ header {
   z-index: 1;
   top: 0;
   background: var(--primary-color);
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 header .navbar {
   margin-bottom: 0px;
@@ -210,6 +215,8 @@ header .navbar-default .navbar-nav li a:hover {
   color: var(--primary-color-text);
 }
 .dashboard{
+  border:1px solid #ffffff3b;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   width: 60%;
   margin: 10px 20%;
 }
@@ -286,7 +293,7 @@ header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/bios.jpg");
+  /* background: url("../img/bios.jpg"); */
   background-position: 50% 94px;
   width: 100%;
   display: block;
@@ -810,6 +817,23 @@ header .navbar-default .navbar-nav li a:hover {
 .iti__country-name{
   color: #000;
 }
+.contact-today{
+  font-weight:400;
+  font-size: 40px;
+  margin: 0 0 30px;
+}
+.contact-rate{
+  margin-top:10px;
+  font-size:22px;
+}
+.contact-box{
+   flex-flow:wrap;
+   max-width:600px;
+   margin: 0 auto;
+}
+.contact-label{
+   margin:20px 0 5px;
+}
 /*--
 	features-contact Start
 --*/
@@ -852,6 +876,7 @@ footer {
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
+  border-top: 1px solid var(--border-bottom-color);
 }
 footer p {
   font-size: 13px;
@@ -887,4 +912,49 @@ footer .footer-manu ul li a:hover {
 }
 .tp-text:hover{
   color: var(--primary-color-text);
+}
+
+/* pricing */
+.pricing-h2{
+  font-weight:400;
+  font-size: 40px;
+  margin: 0 0 30px;
+}
+.pricing-p{
+  margin-top:10px;
+  font-size:22px;
+}
+.pricing-item{
+  padding-top: 40px;
+  background: $light;
+  box-shadow: 0 8px 15px 0 rgba(5, 57, 106, .06);
+  border:1px solid #ffffff3b;
+}
+.pricing-title{
+  text-transform: uppercase;
+  font-size:15px;
+  font-weight:700;
+  margin: 0 0 5px;
+}
+.pricing-value{
+  color:#900020;
+  font-size:50px;
+  padding:10px 0;
+}
+.p-description{
+  padding:20px;
+  font-size:18px;
+}
+.g-sub{
+  color:#fff;
+  font-size:18px;
+}
+.pricing-faq{
+  text-align:center;
+  margin:0 0 30px;
+  font-weight:400;
+  font-size:40px;
+}
+.question p{
+  font-size: 16px;
 }

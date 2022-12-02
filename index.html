@@ -25,7 +25,7 @@ permalink: /
 </section>
 <!-- Wrapper Start -->
 <section id="intro">
-  <div class="container">
+  <div class="container intro-2">
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="block ip">
@@ -44,19 +44,28 @@ permalink: /
   </div>
 </section>
 
-<section id="feature">
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-6">
-      <h2>Create Stock Firmware from downloadable BIOS Update files</h2>
-      <p>BiosCreator simplifies the creation of stock firmware from downloadable BIOS update utility from manufacturer websites.</p>
-    </div>
+<section id="intro">
+<div class="container intro-3">
+  <div class="row row-2">
+    <div class="col-md-5 col-sm-12">
+      <div class="block">
+        <img src="img\create-stock.png" alt="Img">
+      </div>
+    </div><!-- .col-md-5 close -->
+    <div class="col-md-7 col-sm-12 b-support">
+      <div class="block">
+        <div class="section-title backed">
+          <h2>Create Stock Firmware from downloadable BIOS Update files</h2>
+          <p>BiosCreator simplifies the creation of stock firmware from downloadable BIOS update utility from manufacturer websites.</p>
+        </div>
+      </div>
+    </div><!-- .col-md-7 close -->
   </div>
 </div>
 </section>
 
 <section id="intro">
-  <div class="container">
+  <div class="container intro-3">
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="block">
@@ -76,7 +85,7 @@ permalink: /
 </section>
 
 <section id="intro">
-  <div class="container">
+  <div class="container intro-3">
     <div class="row row-2">
       <div class="col-md-5 col-sm-12">
         <div class="block">
@@ -180,7 +189,10 @@ permalink: /
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    mousewheel: true,
+    autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
