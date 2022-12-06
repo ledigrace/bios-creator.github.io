@@ -131,8 +131,9 @@ header .navbar-default .navbar-nav li a:hover {
   text-transform: uppercase;
 }
 #icon{
+  fill: var(--primary-color-text);
   position: absolute;
-  width: 25px;
+  width: 28px;
   cursor: pointer;
   top: 15px;
   right: -23px;
@@ -206,13 +207,34 @@ header .navbar-default .navbar-nav li a:hover {
   width: auto;
   max-width: 470px;
   max-height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #intro .section-title {
   margin-bottom: 0px;
 }
 #intro .section-title p {
-  padding-top: 20px;
+  padding: 25px;
   color: var(--primary-color-text);
+}
+.intro-easy{
+   padding-left:24px;
+}
+.create-s{
+   text-align:right;
+   padding-right:24px;
+}
+.create-p{
+   text-indent:22%
+}
+.intro-perp{
+   padding-left:24px;
+}
+.intro-back{
+   text-align:right;
+   padding-right:24px;
+}
+.assist-p{
+   text-indent:28%
 }
 .dashboard{
   border:1px solid #ffffff3b;
