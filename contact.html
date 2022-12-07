@@ -93,6 +93,7 @@ map:
   </section>
 
   <script>
+  // fetch info from their ip address to spreadsheet using geogetinfo
 
    GetGeoInfo();
 
@@ -103,13 +104,12 @@ map:
    }
 
    function displayResult(value){
-     //document.getElementById('full_name').value = value.city;
-     //document.getElementById('address').value = value.postal;
-     //document.getElementById('email').value = value.country;
      document.getElementById('city').value = value.city;
      document.getElementById('postal').value = value.postal;
      document.getElementById('country').value = value.country;
    }
+
+   // end
 
  function getIp(callback) {
  fetch('https://ipinfo.io/210.23.187.171/json?token=bf1eedb09dfc46', { headers: { 'Accept': 'application/json' }})
