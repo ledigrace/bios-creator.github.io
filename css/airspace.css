@@ -138,6 +138,10 @@ header .navbar-default .navbar-nav li a:hover {
   top: 15px;
   right: -23px;
 }
+#logo{
+  width: 250px;
+  height: 35px;
+}
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/
