@@ -17,7 +17,6 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/testimonial.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 <link rel=”stylesheet” href=”build/css/intlTelInput.css”>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
@@ -31,12 +30,8 @@
 <script src="{{ site.baseurl }}/js/plugins.js"></script>
 <script src="{{ site.baseurl }}/js/min/waypoints.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.counterup.js"></script>
-
-
-
 <script src="{{ site.baseurl }}/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Required for using jQuery input mask plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
@@ -55,6 +50,7 @@
 -->
 
 <script>
+//for contact form
 function SubForm (){
   let x = document.forms["contact"]["full_name"].value;
   let y = document.forms["contact"]["email"].value;
@@ -80,7 +76,6 @@ else{
         type:'post',
         data:$("#bioscreator").serializeArray(),
         success: function(){
-          // alert("Form Data Submitted :)")
           window.location = "{{ site.baseurl }}/ty-page";
         },
         error: function(){
